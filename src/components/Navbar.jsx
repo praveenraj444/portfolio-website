@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 
 const Navbar = ({ isLoggedIn, onLogout }) => {
   const [isDark, setIsDark] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -59,7 +58,7 @@ const Navbar = ({ isLoggedIn, onLogout }) => {
         alignItems: 'center',
         height: '100%'
       }}>
-        <a href="#" style={{
+        <a href="/" style={{
           fontSize: scrolled ? '20px' : '24px',
           fontWeight: '800',
           background: 'linear-gradient(135deg, #6366f1, #8b5cf6)',
