@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 const Navbar = ({ isLoggedIn, onLogout }) => {
   const [isDark, setIsDark] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -58,7 +59,7 @@ const Navbar = ({ isLoggedIn, onLogout }) => {
         alignItems: 'center',
         height: '100%'
       }}>
-        <a href="/" style={{
+        <a href="#" style={{
           fontSize: scrolled ? '22px' : '26px',
           fontWeight: '800',
           background: 'linear-gradient(135deg, #6366f1, #8b5cf6)',
@@ -68,7 +69,7 @@ const Navbar = ({ isLoggedIn, onLogout }) => {
           letterSpacing: '-0.5px',
           transition: 'font-size 0.3s ease'
         }}>
-          Praveen.
+          Welcome to our Portfolio...
         </a>
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
