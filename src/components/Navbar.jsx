@@ -60,7 +60,7 @@ const Navbar = ({ isLoggedIn, onLogout }) => {
         height: '100%'
       }}>
         <a href="#" style={{
-          fontSize: scrolled ? '22px' : '26px',
+          fontSize: scrolled ? '20px' : '24px',
           fontWeight: '800',
           background: 'linear-gradient(135deg, #6366f1, #8b5cf6)',
           WebkitBackgroundClip: 'text',
@@ -69,7 +69,7 @@ const Navbar = ({ isLoggedIn, onLogout }) => {
           letterSpacing: '-0.5px',
           transition: 'font-size 0.3s ease'
         }}>
-          Welcome to our Portfolio...
+          Welcome to our portfolio
         </a>
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
