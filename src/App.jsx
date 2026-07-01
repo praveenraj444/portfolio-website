@@ -8,7 +8,7 @@ import Contact from './components/Contact';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [username, setUsername] = useState('');
+  const [_username, setUsername] = useState('');
 
   const handleLogin = (name) => {
     setUsername(name);
