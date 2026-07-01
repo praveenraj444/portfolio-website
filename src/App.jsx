@@ -8,16 +8,13 @@ import Contact from './components/Contact';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [_username, setUsername] = useState('');
 
-  const handleLogin = (name) => {
-    setUsername(name);
+  const handleLogin = () => {
     setIsLoggedIn(true);
   };
 
   const handleLogout = () => {
     setIsLoggedIn(false);
-    setUsername('');
   };
 
   // If not logged in, show login page

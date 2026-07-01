@@ -159,7 +159,7 @@ const Projects = () => {
                 paddingTop: '20px',
                 borderTop: `1px solid ${colors.border}`
               }}>
-                <a href={project.githubUrl} target="_blank" style={{
+                <a href={project.githubUrl} target="_blank" rel="noreferrer" style={{
                   color: '#6366f1',
                   textDecoration: 'none',
                   fontWeight: '500',
@@ -177,7 +177,7 @@ const Projects = () => {
                 }}>
                   📂 View Code →
                 </a>
-                <a href={project.liveUrl} target="_blank" style={{
+                <a href={project.liveUrl} target="_blank" rel="noreferrer" style={{
                   color: '#6366f1',
                   textDecoration: 'none',
                   fontWeight: '500',
