@@ -15,7 +15,7 @@ const Projects = () => {
   }, []);
 
   const colors = {
-    bg: isDark ? '#0a0a0f' : '#e0e7ff',  // Blue tint
+    bg: isDark ? '#0a0a0f' : '#e0e7ff',
     cardBg: isDark ? 'rgba(255,255,255,0.03)' : 'rgba(255,255,255,0.9)',
     textPrimary: isDark ? '#ffffff' : '#1e1b4b',
     textSecondary: isDark ? 'rgba(255,255,255,0.6)' : 'rgba(30,27,75,0.7)',
@@ -131,7 +131,9 @@ const Projects = () => {
                 marginBottom: '20px',
                 fontSize: '15px'
               }}>
-                {project.description}
+                AI Resume Analyzer - a full-stack web application powered by Google Gemini AI!
+
+                After weeks of building, testing, and deploying, I've created a platform that helps job seekers optimize their resumes, improve their ATS scores, and land their dream jobs faster.
               </p>
               <div style={{
                 display: 'flex',
@@ -159,7 +161,7 @@ const Projects = () => {
                 paddingTop: '20px',
                 borderTop: `1px solid ${colors.border}`
               }}>
-                <a href={project.githubUrl} target="_blank" rel="noreferrer" style={{
+                <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" style={{
                   color: '#6366f1',
                   textDecoration: 'none',
                   fontWeight: '500',
@@ -177,7 +179,7 @@ const Projects = () => {
                 }}>
                   📂 View Code →
                 </a>
-                <a href={project.liveUrl} target="_blank" rel="noreferrer" style={{
+                <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" style={{
                   color: '#6366f1',
                   textDecoration: 'none',
                   fontWeight: '500',
