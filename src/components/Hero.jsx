@@ -14,7 +14,7 @@ const Hero = () => {
   }, []);
 
   const colors = {
-    bg: isDark ? '#0a0a0f' : '#eef2ff',  // Blue tint background
+    bg: isDark ? '#0a0a0f' : '#eef2ff',
     textPrimary: isDark ? '#ffffff' : '#1e1b4b',
     textSecondary: isDark ? 'rgba(255,255,255,0.6)' : 'rgba(30,27,75,0.7)',
     glow: isDark ? 'rgba(99,102,241,0.15)' : 'rgba(99,102,241,0.1)',
@@ -31,13 +31,13 @@ const Hero = () => {
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      padding: '120px 24px 60px',
+      padding: '100px 20px 60px',
       background: colors.bg,
       transition: 'all 0.5s ease',
       position: 'relative',
       overflow: 'hidden'
     }}>
-      {/* Aesthetic Blue Background Shapes */}
+      {/* Background Shapes */}
       <div style={{
         position: 'absolute',
         top: '-20%',
@@ -76,7 +76,7 @@ const Hero = () => {
         margin: '0 auto',
         display: 'grid',
         gridTemplateColumns: '1fr 1fr',
-        gap: '60px',
+        gap: '40px',
         alignItems: 'center',
         position: 'relative',
         zIndex: 1
@@ -102,7 +102,7 @@ const Hero = () => {
           </div>
           
           <h1 style={{
-            fontSize: 'clamp(40px, 6vw, 64px)',
+            fontSize: 'clamp(32px, 5vw, 64px)',
             fontWeight: '800',
             color: colors.textPrimary,
             marginBottom: '8px',
@@ -121,7 +121,7 @@ const Hero = () => {
           </h1>
           
           <h2 style={{
-            fontSize: 'clamp(18px, 2vw, 26px)',
+            fontSize: 'clamp(16px, 1.8vw, 26px)',
             color: colors.textSecondary,
             fontWeight: '400',
             marginBottom: '20px',
@@ -131,7 +131,7 @@ const Hero = () => {
           </h2>
           
           <p style={{
-            fontSize: 'clamp(15px, 1.1vw, 18px)',
+            fontSize: 'clamp(14px, 1vw, 18px)',
             color: colors.textSecondary,
             maxWidth: '550px',
             marginBottom: '40px',
@@ -145,20 +145,22 @@ const Hero = () => {
           <div style={{
             display: 'flex',
             flexWrap: 'wrap',
-            gap: '14px'
+            justifyContent: 'center',
+            gap: '12px'
           }}>
             <a href="#projects" style={{
-              padding: '14px 36px',
+              padding: '12px 28px',
               background: 'linear-gradient(135deg, #6366f1, #8b5cf6)',
               color: 'white',
               borderRadius: '12px',
               textDecoration: 'none',
               fontWeight: '600',
-              fontSize: '15px',
+              fontSize: '14px',
               transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
               display: 'inline-block',
               boxShadow: '0 4px 20px rgba(99,102,241,0.3)',
-              letterSpacing: '0.3px'
+              letterSpacing: '0.3px',
+              textAlign: 'center'
             }}
             onMouseEnter={(e) => {
               e.target.style.transform = 'translateY(-4px)';
@@ -176,18 +178,19 @@ const Hero = () => {
               target="_blank"
               rel="noopener noreferrer"
               style={{
-                padding: '14px 36px',
+                padding: '12px 28px',
                 background: isDark ? 'rgba(255,255,255,0.05)' : 'rgba(255,255,255,0.7)',
                 color: colors.textPrimary,
                 borderRadius: '12px',
                 textDecoration: 'none',
                 fontWeight: '600',
-                fontSize: '15px',
+                fontSize: '14px',
                 transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
                 display: 'inline-block',
                 border: `1px solid ${isDark ? 'rgba(255,255,255,0.1)' : 'rgba(99,102,241,0.2)'}`,
                 letterSpacing: '0.3px',
-                backdropFilter: 'blur(10px)'
+                backdropFilter: 'blur(10px)',
+                textAlign: 'center'
               }}
               onMouseEnter={(e) => {
                 e.target.style.transform = 'translateY(-4px)';
@@ -207,18 +210,19 @@ const Hero = () => {
               href="/PRAVEENRAJ_M_RESUME.pdf" 
               download
               style={{
-                padding: '14px 36px',
+                padding: '12px 28px',
                 background: isDark ? 'rgba(255,255,255,0.05)' : 'rgba(255,255,255,0.7)',
                 color: colors.textPrimary,
                 borderRadius: '12px',
                 textDecoration: 'none',
                 fontWeight: '600',
-                fontSize: '15px',
+                fontSize: '14px',
                 transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
                 display: 'inline-block',
                 border: `1px solid ${isDark ? 'rgba(255,255,255,0.1)' : 'rgba(99,102,241,0.2)'}`,
                 letterSpacing: '0.3px',
-                backdropFilter: 'blur(10px)'
+                backdropFilter: 'blur(10px)',
+                textAlign: 'center'
               }}
               onMouseEnter={(e) => {
                 e.target.style.transform = 'translateY(-4px)';
@@ -236,7 +240,7 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Right Side - Premium Photo Box with Blue Theme */}
+        {/* Right Side - Photo Box */}
         <div style={{
           display: 'flex',
           justifyContent: 'center',
@@ -251,7 +255,9 @@ const Hero = () => {
             animation: 'gradientMove 4s ease infinite',
             boxShadow: isDark 
               ? '0 20px 60px rgba(99,102,241,0.3)' 
-              : '0 20px 60px rgba(99,102,241,0.2)'
+              : '0 20px 60px rgba(99,102,241,0.2)',
+            width: '100%',
+            maxWidth: '380px'
           }}>
             <div style={{
               borderRadius: '18px',
@@ -259,14 +265,14 @@ const Hero = () => {
               background: colors.photoBg,
               backdropFilter: 'blur(20px)',
               border: `1px solid ${colors.photoBorder}`,
-              width: '380px',
-              height: '450px',
+              width: '100%',
+              height: '400px',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
               position: 'relative'
             }}>
-              {/* Aesthetic Background inside Photo Box */}
+              {/* Background Shapes inside Photo Box */}
               <div style={{
                 position: 'absolute',
                 top: '-30%',
@@ -288,7 +294,7 @@ const Hero = () => {
                 pointerEvents: 'none'
               }} />
               
-              {/* Photo - Using My_photo.png */}
+              {/* Photo */}
               <img 
                 src="/My_photo.png" 
                 alt="PRAVEENRAJ M"
@@ -319,7 +325,7 @@ const Hero = () => {
                 }}
               />
               
-              {/* Premium Badge */}
+              {/* Badge */}
               <div style={{
                 position: 'absolute',
                 bottom: '20px',
@@ -342,13 +348,30 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Animation Styles */}
+      {/* Mobile Responsive Styles */}
       <style>
         {`
           @keyframes gradientMove {
             0% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
+          }
+
+          @media (max-width: 768px) {
+            .hero-grid {
+              grid-template-columns: 1fr !important;
+              text-align: center !important;
+            }
+            .hero-text {
+              text-align: center !important;
+            }
+            .hero-buttons {
+              justify-content: center !important;
+            }
+            .hero-photo {
+              max-width: 280px !important;
+              margin: 0 auto !important;
+            }
           }
         `}
       </style>
