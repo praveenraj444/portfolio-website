@@ -68,7 +68,7 @@ const Navbar = ({ isLoggedIn, onLogout }) => {
           letterSpacing: '-0.5px',
           transition: 'font-size 0.3s ease'
         }}>
-          Welcome to our portfolio
+          Welcome
         </a>
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
